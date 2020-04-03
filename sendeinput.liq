@@ -1,4 +1,5 @@
 %include "settings.liq"
+set("server.telnet.port", 8085)
 
 mannheim_studio = input.jack(
   id="mannheim_studio"
@@ -57,7 +58,7 @@ switched = switch(
   [
     (
       {
-        (source_name() == "mobil_1")
+        (not !mobil_1_blank) and (source_name() == "mobil_1")
       },
       mobil_1_on_blank
     ),

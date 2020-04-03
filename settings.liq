@@ -7,6 +7,5 @@ set("harbor.verbose", true)
 
 set("server.telnet", true)
 set("server.telnet.bind_addr", "127.0.0.1")
-set("server.telnet.port", 8085)
 set("server.telnet.revdns", false)
 set("server.timeout", 120.)
